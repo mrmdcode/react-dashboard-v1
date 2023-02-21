@@ -1,5 +1,61 @@
+@import url("./../fonts/Roboto.css");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.dashboard-container {
+    display: block;
+    font-family: sans-serif , Roboto;
+}
+.dashboard-container .navbar-dashboard {
+    display: block;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    border-bottom: 1px solid #000;
+    background-color: #ebeff2;
+    padding: 0 30px 0 0  ;
+}
+.dashboard-container .navbar-dashboard .brand-logo{
+    width: 245px;
+    height: 100%;
+    /*padding: 8px;*/
+    float: left;
+    display: inline-block;
+    align-items: center;
+    background-color: #fff;
+}
+.dashboard-container .navbar-dashboard .brand-logo img{
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+.dashboard-container .navbar-dashboard .title-page{
+    width: 140px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    padding-top: 25px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+@import url("./dashboard/header-search.css");
+@import url("./dashboard/header-notfication.css");
+@import url("./dashboard/header-account.css");
+
+.dashboard-container .navbar-dashboard .setting-app{
+    width: 65px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    scale: 1.7;
 }

@@ -1,0 +1,108 @@
+.dashboard-container .navbar-dashboard .notfication-app{
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 100%;
+    float: right;
+    position: relative;
+    padding-top: 27px;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-box .notfication-icon{
+    scale: 2;
+    position: relative;
+    cursor: pointer;
+
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box {
+    position: absolute;
+    width: 318px;
+    height: 330px;
+    border: 1px solid #000;
+    top: 79px;
+    left: -119px;
+    border-radius: 3px;
+    background-color: #fff;
+
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box.hide {
+    display: none;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .notfication-header {
+    width: 100%;
+    height: 55px;
+    display: block;
+    padding: 20px 35px;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .notfication-header .fe{
+    float: right;
+    font-size: 13px;
+    font-weight: 300;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: 222px;
+    margin: 0 2px 0 0;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box::-webkit-scrollbar {
+    width: 5px;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message{
+    display: flex;
+    width: 98%;
+    min-height: 60px;
+    padding: 8px 5px 8px 15px;
+    margin: 2px ;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message.last-msg ,
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message:hover{
+    background-color: #f7f7f7;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message .contact-img{
+    /*float: left;*/
+    width: 45px;
+    height: 100%;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message .contact-img img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message .information-container{
+    text-align: left;
+    margin-left: 15px;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message .information-container h5{
+    font-weight: 400;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message .information-container p{
+    font-size: 14px;
+    color: #343a40;
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .notfication-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    background-color: #fff;
+    margin: 3px 2px;
+    color: #71B6F9;
+    height: 45px;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    cursor: pointer;
+
+}
+.dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .notfication-footer:hover {
+    background-color: #f7f7f7;
+
+}

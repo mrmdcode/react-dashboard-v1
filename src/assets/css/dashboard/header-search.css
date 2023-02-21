@@ -1,0 +1,40 @@
+.dashboard-container .navbar-dashboard .search-app {
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 210px;
+    padding-top: 17px;
+}
+.dashboard-container .navbar-dashboard .search-app .search-box{
+    position: relative;
+}
+.dashboard-container .navbar-dashboard .search-app .search-box input {
+    width: 190px;
+    height: 37px;
+    padding: 6px 10px;
+    border-radius: 19px;
+    border: none;
+    outline-style: none;
+    background-color: #e2e6ea;
+}
+.dashboard-container .navbar-dashboard .search-app .search-box input:focus {
+    box-shadow: 0 0 5px .2px #000000e8,0 0 1px 2px #000000e8;
+}
+.dashboard-container .navbar-dashboard .search-app .search-box .search-icon{
+    position: relative;
+    left: -28px;
+    top: 3px;
+    z-index: 3;
+}
+.dashboard-container .navbar-dashboard .search-app .search-result-box {
+    position: absolute;
+    width: 270px;
+    height: 294px;
+    border: 1px solid #000;
+    top: 79px;
+    left: -44px;
+    border-radius: 3px;
+}
+.dashboard-container .navbar-dashboard .search-app .search-result-box.hide {
+    display: none;
+}

@@ -1,4 +1,12 @@
+import AuthalbeLayout from "../components/AuthalbeLayout";
+
 export const behindRoutes = {
-    path: '/b',
-    element : <h2>front</h2>
+    path: '/dashboard',
+    element : <AuthalbeLayout/>,
+    children: [
+        {
+            path: '/dashboard/',
+            element: <h2>dashboard</h2>,
+        },
+    ]
 }
