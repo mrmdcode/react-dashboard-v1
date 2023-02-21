@@ -21,8 +21,8 @@ const AuthalbeLayout = () => {
                 <AccountApp/>
                 <NotficationApp/>
                 <SearchApp/>
-
             </div>
+
         </div>
     )
 }
