@@ -1,14 +1,15 @@
 import {createContext,useContext ,useState } from "react";
 const StateContext = createContext({
-    currentuser : null,
+    user : null,
     token : null,
     notification :null,
     setcurrentUser : () =>{},
     setToken : () =>{},
     setNotfication : () =>{},
+    Logout: ()=>{},
 });
 export const ContextProvider = ({children}) =>{
-    const [currentuser, _setcurrentUser] = useState({});
+    const [user, _setcurrentUser] = useState('');
     const [token, _setToken] = useState('');
     const [notfication, _setNotfication] = useState('');
 
@@ -43,12 +44,13 @@ export const ContextProvider = ({children}) =>{
 
     return (
         <StateContext.Provider value={{
-            currentuser,
+            user,
             token,
             notfication,
             setcurrentUser,
             setToken,
             setNotfication,
+            Logout
 
         }}>
             {children}
