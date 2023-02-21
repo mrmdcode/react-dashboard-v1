@@ -4,6 +4,7 @@ import BrandLogo from './../assets/img/large.png';
 import NotficationApp from "./dashboard/header-dashboard/notfication/NotficationApp";
 import SearchApp from "./dashboard/header-dashboard/SearchApp";
 import AccountApp from "./dashboard/header-dashboard/AccountApp";
+import SettingApp from "./dashboard/header-dashboard/SettingApp";
 
 const AuthalbeLayout = () => {
 
@@ -16,7 +17,7 @@ const AuthalbeLayout = () => {
                 <div className="title-page">
                     dashboard
                 </div>
-
+                <SettingApp/>
                 <AccountApp/>
                 <NotficationApp/>
                 <SearchApp/>

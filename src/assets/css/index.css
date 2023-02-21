@@ -49,13 +49,4 @@
 @import url("./dashboard/header-search.css");
 @import url("./dashboard/header-notfication.css");
 @import url("./dashboard/header-account.css");
-
-.dashboard-container .navbar-dashboard .setting-app{
-    width: 65px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    scale: 1.7;
-}
+@import url("./dashboard/header-setting.css");
