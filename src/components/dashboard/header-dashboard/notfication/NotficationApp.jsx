@@ -1,17 +1,19 @@
-import React from 'react';
+import React  from 'react';
 import Message from "./Message";
 import {BiBell} from "react-icons/bi";
 import {BsArrowRight} from "react-icons/bs";
+import {useStateContext} from "../../../../context/ContextProvider";
 
 const NotficationApp = () => {
+    const {setDashboardHeaderNotficationAppShow , dashboardHeaderNotficationAppShow} = useStateContext();
 
     return (
 
         <div className="notfication-app">
-            <div className="notfication-box">
+            <div className="notfication-box" onClick={()=>setDashboardHeaderNotficationAppShow(!dashboardHeaderNotficationAppShow)} >
                 <BiBell className="notfication-icon"/>
             </div>
-            <div className="notfication-result-box hide">
+            <div className={dashboardHeaderNotficationAppShow ? "notfication-result-box":"notfication-result-box hide"}>
                 <div className="notfication-header">
                     Notfication
                     <span className="fe">

@@ -17,7 +17,6 @@
     position: absolute;
     width: 318px;
     height: 330px;
-    border: 1px solid #000;
     top: 79px;
     left: -119px;
     border-radius: 3px;
@@ -61,6 +60,7 @@
     min-height: 60px;
     padding: 8px 5px 8px 15px;
     margin: 2px ;
+    cursor: pointer;
 }
 .dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message.last-msg ,
 .dashboard-container .navbar-dashboard .notfication-app .notfication-result-box .message-box .message:hover{

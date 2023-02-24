@@ -24,6 +24,7 @@
     left: 5px;
     width: 185px;
     border-radius: 5px;
+    background-color: #fff;
 }
 .dashboard-container .navbar-dashboard .account-app .account-result-box.hide{
     display: none;
