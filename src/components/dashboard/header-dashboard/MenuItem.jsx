@@ -3,7 +3,7 @@ import {IoIosArrowForward} from 'react-icons/io';
 import {useNavigate} from 'react-router-dom';
 
 
-const MenuItem = ({IconElement,ItemName , children, ClickHandler , ShowSubset=""  , to}) => {
+const MenuItem = ({IconElement,ItemName , children, ClickHandler , ShowSubset=""  , to="#"}) => {
 
     const navigateTo = useNavigate();
     const clickHandler =()=>{
