@@ -5,6 +5,7 @@ const Test1 = () => {
     const {user} = useStateContext();
     return (
         <div>
+            <h3>say hello</h3>
             {user}
         </div>
     )

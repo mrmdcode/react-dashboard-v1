@@ -1,6 +1,10 @@
 import React from 'react';
 import {useStateContext} from "../../context/ContextProvider";
 import MenuItem from "./header-dashboard/MenuItem";
+import {RiDashboardLine,RiUserAddFill } from 'react-icons/ri';
+import {SlWallet} from 'react-icons/sl';
+import {BsWallet2} from 'react-icons/bs';
+import {FaUserFriends} from 'react-icons/fa';
 const AsideMenuBox = () => {
 
     const {setDashboardAsideSubset,dashboardAsideSubset ,setDashboardAsideSubsetS ,dashboardAsideSubsetS} = useStateContext();
@@ -20,13 +24,12 @@ const AsideMenuBox = () => {
             <li className="menu-title">
                 Navigation
             </li>
-            <MenuItem ItemName="dashboard"/>
+            <MenuItem IconElement={<RiDashboardLine/>} ItemName={ "dashboard"}/>
             <li className="menu-title">
                 Users
             </li>
-            <MenuItem ItemName="List Users"/>
-            {/*<MenuItem ItemName="New Users" ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset} StatusSabset={dashboardAsideSubsetS} >*/}
-            <MenuItem ItemName="New Users" ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}  >
+            <MenuItem IconElement={<FaUserFriends/>} ItemName="List Users"/>
+            <MenuItem IconElement={<RiUserAddFill/>} ItemName="New Users" ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}  >
                 <MenuItem ItemName="role one"/>
                 <MenuItem ItemName="role two"/>
                 <MenuItem ItemName="role three"/>
@@ -35,8 +38,8 @@ const AsideMenuBox = () => {
             <li className="menu-title">
                 pay
             </li>
-            <MenuItem ItemName="deposit"/>
-            <MenuItem ItemName="whihraw"  ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}>
+            <MenuItem IconElement={<SlWallet/>} ItemName="deposit"/>
+            <MenuItem IconElement={<BsWallet2/>} ItemName="whihraw"  ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}>
                 <MenuItem ItemName="to my account"/>
 
             </MenuItem>
@@ -44,7 +47,7 @@ const AsideMenuBox = () => {
             <li className="menu-title">
                 pages
             </li>
-            <MenuItem ItemName="test - 1" to="/test_1"/>
+            <MenuItem ItemName="test - 1" to="/t1"/>
 
 
 
