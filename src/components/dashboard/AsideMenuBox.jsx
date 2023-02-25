@@ -24,15 +24,17 @@ const AsideMenuBox = () => {
             <li className="menu-title">
                 Navigation
             </li>
-            <MenuItem IconElement={<RiDashboardLine/>} ItemName={ "dashboard"}/>
+            <MenuItem IconElement={<RiDashboardLine/>} ItemName={ "dashboard"} to="/dashboard/"/>
             <li className="menu-title">
                 Users
             </li>
-            <MenuItem IconElement={<FaUserFriends/>} ItemName="List Users"/>
+            <MenuItem IconElement={<FaUserFriends/>} ItemName="List Users" to="list-user"/>
             <MenuItem IconElement={<RiUserAddFill/>} ItemName="New Users" ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}  >
-                <MenuItem ItemName="role one"/>
-                <MenuItem ItemName="role two"/>
-                <MenuItem ItemName="role three"/>
+                <MenuItem ItemName="Admin" to="/dashboard/create-user/admin"/>
+                <MenuItem ItemName="Shop Manager" to="/dashboard/create-user/shop-manager"/>
+                <MenuItem ItemName="Writer" to="/dashboard/create-user/writer"/>
+                <MenuItem ItemName="SEO Dev" to="/dashboard/create-user/SEO-Dev"/>
+                <MenuItem ItemName="normal" to="/dashboard/create-user/normal"/>
 
             </MenuItem>
             <li className="menu-title">
@@ -40,7 +42,8 @@ const AsideMenuBox = () => {
             </li>
             <MenuItem IconElement={<SlWallet/>} ItemName="deposit"/>
             <MenuItem IconElement={<BsWallet2/>} ItemName="whihraw"  ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}>
-                <MenuItem ItemName="to my account"/>
+                <MenuItem ItemName="To My Account" to="/dashboard/deposit/main-account"/>
+                <MenuItem ItemName="Create New Deposit Account" to="/dashboard/deposit/create-account"/>
 
             </MenuItem>
 
@@ -48,6 +51,8 @@ const AsideMenuBox = () => {
                 pages
             </li>
             <MenuItem ItemName="test - 1" to="/t1"/>
+            <MenuItem ItemName="test - 2" to="/t2"/>
+            <MenuItem ItemName="not found" to="/*"/>
 
 
 
