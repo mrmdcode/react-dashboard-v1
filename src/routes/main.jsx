@@ -2,6 +2,7 @@ import {createBrowserRouter} from "react-router-dom";
 import Test2 from "../views/test_2";
 import Test1 from "../views/test_1";
 import AuthalbeLayout from "../components/AuthalbeLayout";
+import NotFound from "../views/outher/NotFound";
 export const mainRoutes = createBrowserRouter([
     {
         path: "/",
@@ -30,5 +31,8 @@ export const mainRoutes = createBrowserRouter([
         path: '/f',
         element : <h2>front</h2>
     },
-    // frontRoutes,
+    {
+        path: "*",
+        element: <NotFound/>
+    }
 ]);
