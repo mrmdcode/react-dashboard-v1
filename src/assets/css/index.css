@@ -4,14 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-.dashboard-container {
-    display: block;
-    font-family: sans-serif , Roboto;
-    height: 100vh;
+
+
+
+@keyframes animationSpiner{
+    from {
+        rotate: z 0deg;
+    }
+    to {
+
+        rotate: z 500deg;
+    }
 }
 
-@import url("./dashboard/header-main.css");
 
-@import url("./dashboard/aside-main.css");
+@import url("./views/not-found.css");
 
-@import url("./dashboard/content-main.css");
+@import url("./dashboard/dashboard-main.css");
+
+
