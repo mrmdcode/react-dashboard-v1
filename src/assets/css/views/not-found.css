@@ -1,0 +1,17 @@
+.not-found-page{
+    width: 100%;
+    font-weight: 800;
+    font-size: 25px;
+
+}
+.not-found-page .spiner{
+    height: 50px;
+    width: 50px;
+    animation: animationSpiner 3.4s ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-found-page .spiner svg{
+    scale: 1.7;
+}
