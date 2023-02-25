@@ -3,7 +3,7 @@ import {useStateContext} from "../../context/ContextProvider";
 import MenuItem from "./header-dashboard/MenuItem";
 const AsideMenuBox = () => {
 
-const {setDashboardAsideSubset,dashboardAsideSubset ,setDashboardAsideSubsetS ,dashboardAsideSubsetS} = useStateContext();
+    const {setDashboardAsideSubset,dashboardAsideSubset ,setDashboardAsideSubsetS ,dashboardAsideSubsetS} = useStateContext();
 
     const ClickHandler = (ItemName) => {
 
@@ -40,6 +40,11 @@ const {setDashboardAsideSubset,dashboardAsideSubset ,setDashboardAsideSubsetS ,d
                 <MenuItem ItemName="to my account"/>
 
             </MenuItem>
+
+            <li className="menu-title">
+                pages
+            </li>
+            <MenuItem ItemName="test - 1" to="/test_1"/>
 
 
 
