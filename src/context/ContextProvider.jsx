@@ -25,7 +25,7 @@ const StateContext = createContext({
 });
 export const ContextProvider = ({children}) =>{
     const [appUrl, setAppUrl] = useState("http://localhost:3000");
-    const [user, _setcurrentUser] = useState('');
+    const [user, _setcurrentUser] = useState({});
     const [token, _setToken] = useState('');
     const [notfication, _setNotfication] = useState('');
     const [dashboardHeaderSearchAppShow, _setDashboardHeaderSearchAppShow] = useState(false);
