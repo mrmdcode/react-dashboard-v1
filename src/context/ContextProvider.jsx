@@ -1,13 +1,15 @@
 import {createContext,useContext ,useState } from "react";
 const StateContext = createContext({
+    AppUrl:null,
     user : null,
     token : null,
     notification :null,
     dashboardHeaderSearchAppShow:null,
     dashboardHeaderNotficationAppShow:null,
     dashboardHeaderAccountAppShow:null,
-    dashboardAsideUsersSubset:null,
-    AppUrl:null,
+    dashboardAsideSubset:null,
+    dashboardAsideSubsetS:null,
+    setAppUrl: ()=>{},
     setcurrentUser : () =>{},
     setToken : () =>{},
     setNotfication : () =>{},
@@ -15,8 +17,8 @@ const StateContext = createContext({
     setDashboardHeaderSearchAppShow: ()=>{},
     setDashboardHeaderNotficationAppShow: ()=>{},
     setDashboardHeaderAccountAppShow: ()=>{},
-    setDashboardAsideUsersSubset: ()=>{},
-    setAppUrl: ()=>{},
+    setdashboardAsideSubset: ()=>{},
+    setDashboardAsideSubsetS: ()=>{},
 
 
 
@@ -29,7 +31,8 @@ export const ContextProvider = ({children}) =>{
     const [dashboardHeaderSearchAppShow, _setDashboardHeaderSearchAppShow] = useState(false);
     const [dashboardHeaderNotficationAppShow, _setDashboardHeaderNotficationAppShow] = useState(false);
     const [dashboardHeaderAccountAppShow, _setDashboardHeaderAccountAppShow] = useState(false);
-    const [dashboardAsideUsersSubset, _setDashboardAsideUsersSubset] = useState(false);
+    const [dashboardAsideSubsetS, _setDashboardAsideSubsetS] = useState(false);
+    const [dashboardAsideSubset, _setDashboardAsideSubset] = useState("");
 
     const setcurrentUser = (NUser) =>{
         _setcurrentUser(NUser);
@@ -66,39 +69,49 @@ export const ContextProvider = ({children}) =>{
         _setDashboardHeaderNotficationAppShow(!dashboardHeaderNotficationAppShow);
         _setDashboardHeaderSearchAppShow(false);
         _setDashboardHeaderAccountAppShow(false);
-        _setDashboardAsideUsersSubset(false);
+        _setDashboardAsideSubsetS(false);
+        _setDashboardAsideSubset("");
     }
 
     const setDashboardHeaderSearchAppShow = () => {
         _setDashboardHeaderSearchAppShow(!dashboardHeaderSearchAppShow)
         _setDashboardHeaderNotficationAppShow(false);
         _setDashboardHeaderAccountAppShow(false);
-        _setDashboardAsideUsersSubset(false);
+        _setDashboardAsideSubsetS(false);
+        _setDashboardAsideSubset("");
     }
 
     const setDashboardHeaderAccountAppShow = () => {
         _setDashboardHeaderAccountAppShow(!dashboardHeaderAccountAppShow)
         _setDashboardHeaderSearchAppShow(false);
         _setDashboardHeaderNotficationAppShow(false);
-        _setDashboardAsideUsersSubset(false);
+        _setDashboardAsideSubsetS(false);
+        _setDashboardAsideSubset("");
     }
-    const setDashboardAsideUsersSubset = (v) => {
-        _setDashboardAsideUsersSubset(!dashboardAsideUsersSubset);
+
+    const setDashboardAsideSubset = (v) => {
+        _setDashboardAsideSubset(v);
         _setDashboardHeaderAccountAppShow(false)
         _setDashboardHeaderSearchAppShow(false);
         _setDashboardHeaderNotficationAppShow(false);
     }
+    const setDashboardAsideSubsetS = () => {
+        _setDashboardAsideSubsetS(!dashboardAsideSubsetS)
+    }
+
 
     return (
         <StateContext.Provider value={{
+            appUrl,
             user,
             token,
             notfication,
             dashboardHeaderSearchAppShow,
             dashboardHeaderNotficationAppShow,
             dashboardHeaderAccountAppShow,
-            dashboardAsideUsersSubset,
-            appUrl,
+            dashboardAsideSubsetS,
+            dashboardAsideSubset,
+            setAppUrl,
             setcurrentUser,
             setToken,
             setNotfication,
@@ -106,8 +119,8 @@ export const ContextProvider = ({children}) =>{
             setDashboardHeaderSearchAppShow,
             setDashboardHeaderNotficationAppShow,
             setDashboardHeaderAccountAppShow,
-            setDashboardAsideUsersSubset,
-            setAppUrl,
+            setDashboardAsideSubset,
+            setDashboardAsideSubsetS
         }}>
             {children}
         </StateContext.Provider>
