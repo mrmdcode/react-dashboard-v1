@@ -4,7 +4,17 @@
     position: fixed;
     top: 75px;
     left: 0;
+    padding: 0 0 150px 0;
+    overflow: scroll;
 }
+.dashboard-container .dashboard-aside::-webkit-scrollbar {
+    width: 5px;
+}
+.dashboard-container .dashboard-aside::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
 
 @import url("./user-box.css");
 @import url("./aside-menu.css");
