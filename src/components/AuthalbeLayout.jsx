@@ -43,7 +43,7 @@ const AuthalbeLayout = () => {
 
             {/*start dashboard content*/}
             <div className="dashboard-content">
-
+                <Outlet/>
             </div>
             {/*end dashboard content*/}
         </div>
