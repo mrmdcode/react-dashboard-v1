@@ -1,8 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
-import {behindRoutes} from "./behind";
-import {frontRoutes} from "./front";
 import Test2 from "../views/test_2";
 import Test1 from "../views/test_1";
+import AuthalbeLayout from "../components/AuthalbeLayout";
 export const mainRoutes = createBrowserRouter([
     {
         path: "/",
@@ -16,6 +15,20 @@ export const mainRoutes = createBrowserRouter([
         path: "/t2",
         element: <Test2/>
     },
-    behindRoutes,
-    frontRoutes,
+    {
+        path: '/dashboard',
+        element : <AuthalbeLayout/>,
+        children: [
+            {
+                path: '/dashboard/',
+                element: <h2>dashboard</h2>,
+            },
+
+        ]
+    },
+    {
+        path: '/f',
+        element : <h2>front</h2>
+    },
+    // frontRoutes,
 ]);
