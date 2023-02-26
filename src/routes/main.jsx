@@ -4,6 +4,7 @@ import Test1 from "../views/test_1";
 import AuthalbeLayout from "../components/AuthalbeLayout";
 import NotFound from "../views/outher/NotFound";
 import MainPage from "../views/Dashboard/MainPage";
+import ListUsers from "../views/Dashboard/ListUsers";
 export const mainRoutes = createBrowserRouter([
     {
         path: "/",
@@ -26,7 +27,8 @@ export const mainRoutes = createBrowserRouter([
                 element: <MainPage/>,
             },
             {
-                path: "/dashboard/users/list-users"
+                path: "/dashboard/users/list-users",
+                element: <ListUsers/>
             }
 
         ]
