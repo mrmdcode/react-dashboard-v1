@@ -28,7 +28,7 @@ const AsideMenuBox = () => {
             <li className="menu-title">
                 Users
             </li>
-            <MenuItem IconElement={<FaUserFriends/>} ItemName="List Users" to="list-user"/>
+            <MenuItem IconElement={<FaUserFriends/>} ItemName="List Users" to="/dashboard/users/list-users"/>
             <MenuItem IconElement={<RiUserAddFill/>} ItemName="New Users" ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}  >
                 <MenuItem ItemName="Admin" to="/dashboard/create-user/admin"/>
                 <MenuItem ItemName="Shop Manager" to="/dashboard/create-user/shop-manager"/>
@@ -42,7 +42,7 @@ const AsideMenuBox = () => {
             </li>
             <MenuItem IconElement={<SlWallet/>} ItemName="deposit"/>
             <MenuItem IconElement={<BsWallet2/>} ItemName="whihraw"  ClickHandler={ClickHandler} ShowSubset={dashboardAsideSubset}>
-                <MenuItem ItemName="To My Account" to="/dashboard/deposit/main-account"/>
+                <MenuItem ItemName="Main Account" to="/dashboard/deposit/main-account"/>
                 <MenuItem ItemName="Create New Deposit Account" to="/dashboard/deposit/create-account"/>
 
             </MenuItem>
