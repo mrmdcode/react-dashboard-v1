@@ -1,4 +1,4 @@
-const FetchNormal =async (method="GET" , url , body={}) => {
+const FetchNormal =async ( url , method="GET",body={} ) => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("Accept", "aplication/json");
