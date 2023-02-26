@@ -1,0 +1,53 @@
+.dashboard-container .dashboard-content .list-user{
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+.dashboard-container .dashboard-content .list-user .list{
+    width: 99%;
+    margin: 3px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dashboard-container .dashboard-content .list-user .list .table-style{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style thead tr{
+    background-color: #575964;
+    color: #ffffff;
+    text-align: left;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style th ,
+.dashboard-container .dashboard-content .list-user .list .table-style td {
+    padding: 12px 15px;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr:last-of-type {
+    border-bottom: 2px solid #575964;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr.active-row {
+    font-weight: bold;
+    color: #ffce00;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation {
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation {
+}
