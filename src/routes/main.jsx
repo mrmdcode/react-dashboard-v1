@@ -3,6 +3,7 @@ import Test2 from "../views/test_2";
 import Test1 from "../views/test_1";
 import AuthalbeLayout from "../components/AuthalbeLayout";
 import NotFound from "../views/outher/NotFound";
+import MainPage from "../views/Dashboard/MainPage";
 export const mainRoutes = createBrowserRouter([
     {
         path: "/",
@@ -22,8 +23,11 @@ export const mainRoutes = createBrowserRouter([
         children: [
             {
                 path: '/dashboard/',
-                element: <h2>dashboard</h2>,
+                element: <MainPage/>,
             },
+            {
+                path: "/dashboard/users/list-users"
+            }
 
         ]
     },
