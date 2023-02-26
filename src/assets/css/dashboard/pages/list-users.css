@@ -49,5 +49,51 @@
     display: flex;
     flex-direction: column;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation {
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation button{
+    width: auto;
+    padding: 3px 4px;
+    margin: 1px 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(1) {
+    border: .2px solid #898C8CD3;
+    background-color: #fff;
+    color: #FF0000D8;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(1):hover {
+    border: .2px solid #fff;
+    background-color: #FF0000D8;
+    color: #e9f2f3;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(2) {
+    border: .2px solid #f7ff00;
+    background-color: #e9f2f3;
+    color: #f7ff00;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(2):hover {
+    border: .2px solid #e9f2f3;
+    background-color: #f7ff00;
+    color: #e9f2f3;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(1) {
+    border: .2px solid #c7ff00;
+    background-color: #e9f2f3;
+    color: #c7ff00;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(1):hover {
+    border: .2px solid #e9f2f3;
+    background-color: #c7ff00;
+    color: #e9f2f3;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(2) {
+    border: .2px solid #B12EC9FF;
+    background-color: #e9f2f3;
+    color: #B12EC9FF;
+}
+.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(2):hover {
+    border: .2px solid #e9f2f3;
+    background-color: #B12EC9FF;
+    color: #e9f2f3;
 }
