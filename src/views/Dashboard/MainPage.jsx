@@ -1,32 +1,17 @@
 import React from 'react';
-import {BiDotsVerticalRounded} from 'react-icons/bi';
 
+import {BarAnalyzeBox, CircleAnalyzeBox} from "../../components/dashboard/AnalyzeBox";
 const MainPage = () => {
 
 return(
     <div className="main-container">
         <div className="header-page">
             <div className="analyze-container">
-                <div className="analyze-box">
-                    <div className="header-box">
-                        <div className="title">New User</div>
-                        <div className="operation">
-                            <BiDotsVerticalRounded/>
-                        </div>
-                    </div>
-                    <div className="content-box">
-                        <div className="circle-chart">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div className="chart-detail">
-                            2550
-                        </div>
-                    </div>
-                </div>
-                <div className="analyze-box">analizesssss</div>
-                <div className="analyze-box">analizesssss</div>
-                <div className="analyze-box">analizesssss</div>
+                <CircleAnalyzeBox name="Maximum Register Daily" value="60" mark="User">500</CircleAnalyzeBox>
+                <BarAnalyzeBox name="New Mails" value={20}>1500</BarAnalyzeBox>
+                <CircleAnalyzeBox name="Today Login User" value="6" mark="User">50</CircleAnalyzeBox>
+                <BarAnalyzeBox name="Response Requests" value={100}>190</BarAnalyzeBox>
+
             </div>
         </div>
     </div>
