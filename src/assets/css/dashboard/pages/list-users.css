@@ -1,98 +1,106 @@
-.dashboard-container .dashboard-content .list-user{
+.dashboard-container .dashboard-content .users-information{
     background-color: #ffffff;
     display: block;
     width: 100%;
+}
+.dashboard-container .dashboard-content .users-information::-webkit-scrollbar {
+    width: 5px;
+}
+.dashboard-container .dashboard-content .users-information::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+.dashboard-container .dashboard-content .users-information .list-user{
+    max-height: 89vh;
     border-radius: 5px;
+    overflow: scroll;
+    padding: 9px;
 }
-.dashboard-container .dashboard-content .list-user .list{
-    width: 99%;
-    margin: 3px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.dashboard-container .dashboard-content .users-information .list-user::-webkit-scrollbar {
+    width: 5px;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style{
+.dashboard-container .dashboard-content .users-information .list-user::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+.dashboard-container .dashboard-content .users-information .list-user .table-style{
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 25px auto;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     width: 100%;
+    border-radius: 5px;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style thead tr{
+.dashboard-container .dashboard-content .users-information .list-user .table-style thead tr{
     background-color: #575964;
     color: #ffffff;
     text-align: left;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style th ,
-.dashboard-container .dashboard-content .list-user .list .table-style td {
+.dashboard-container .dashboard-content .users-information .list-user .table-style th ,
+.dashboard-container .dashboard-content .users-information .list-user .table-style td {
     padding: 12px 15px;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr {
     border-bottom: 1px solid #dddddd;
 }
-
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr:nth-of-type(even) {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
-
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr:last-of-type {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr:last-of-type {
     border-bottom: 2px solid #575964;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr.active-row {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr.active-row {
     font-weight: bold;
     color: #ffce00;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation {
     display: flex;
-    flex-direction: column;
+
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation button{
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation span{
+    display: block;
+    /*flex-direction: row;*/
+}
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation button{
     width: auto;
+    /*max-width: 80px;*/
+    height: 35px;
     padding: 3px 4px;
-    margin: 1px 2px;
+    margin: 0 2px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: inline-block;
+
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(1) {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation button:nth-child(1) {
     border: .2px solid #898C8CD3;
     background-color: #fff;
     color: #FF0000D8;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(1):hover {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation button:nth-child(1):hover {
     border: .2px solid #fff;
     background-color: #FF0000D8;
     color: #e9f2f3;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(2) {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation button:nth-child(2) {
     border: .2px solid #f7ff00;
     background-color: #e9f2f3;
     color: #f7ff00;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(1) button:nth-child(2):hover {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation button:nth-child(2):hover {
     border: .2px solid #e9f2f3;
     background-color: #f7ff00;
     color: #e9f2f3;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(1) {
-    border: .2px solid #c7ff00;
-    background-color: #e9f2f3;
-    color: #c7ff00;
-}
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(1):hover {
-    border: .2px solid #e9f2f3;
-    background-color: #c7ff00;
-    color: #e9f2f3;
-}
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(2) {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation button:nth-child(3) {
     border: .2px solid #B12EC9FF;
     background-color: #e9f2f3;
     color: #B12EC9FF;
 }
-.dashboard-container .dashboard-content .list-user .list .table-style tbody tr td.operation span:nth-child(2) button:nth-child(2):hover {
+.dashboard-container .dashboard-content .users-information .list-user .table-style tbody tr td.operation button:nth-child(3):hover {
     border: .2px solid #e9f2f3;
     background-color: #B12EC9FF;
     color: #e9f2f3;

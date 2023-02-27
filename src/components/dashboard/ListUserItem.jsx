@@ -1,7 +1,6 @@
 import React from 'react';
 import {AiOutlineUserDelete ,AiOutlineEdit ,AiOutlineKey} from 'react-icons/ai';
 
-
 const ListUserItem = ({index ,active =false , data ,OperationHandler}) => {
     const {
         id,
@@ -20,7 +19,7 @@ const ListUserItem = ({index ,active =false , data ,OperationHandler}) => {
 
     return (
         <tr className={active ? "active-row" : null}>
-            <td>{index}</td>
+            <td>{index +1}</td>
             <td>{FirstName + LastName}</td>
             <td>{Email}</td>
             <td>{Skill}</td>
@@ -32,14 +31,11 @@ const ListUserItem = ({index ,active =false , data ,OperationHandler}) => {
             <td>{RegisterAt}</td>
             <td>{LastLogin}</td>
             <td className="operation">
-                <span className="row">
-                    <button onClick={()=>OperationHandler(id,"Delete")}><AiOutlineUserDelete/> Delete</button>
-                    <button onClick={()=>OperationHandler(id,"Edit")}><AiOutlineEdit/> Edit</button>
-                </span>
-                <span className="row">
-                    <button onClick={()=>OperationHandler(id,"FastEdit")}><AiOutlineEdit/> Fast Edit</button>
-                    <button onClick={()=>OperationHandler(id,"ResetPassword")}><AiOutlineKey/>Reset Password</button>
-                </span>
+
+                <button onClick={()=>OperationHandler(id,"Delete")}><AiOutlineUserDelete/> Delete</button>
+                <button onClick={()=>OperationHandler(id,"Edit")}><AiOutlineEdit/> Edit</button>
+                <button onClick={()=>OperationHandler(id,"SendMessage")}><AiOutlineKey/>Send Mess</button>
+
             </td>
         </tr>
     )

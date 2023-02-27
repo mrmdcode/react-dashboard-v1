@@ -51,35 +51,35 @@ const ListUsers = () => {
         console.log(Chosse , id)
     }
     return (
-        <div className="list-user">
-            <section className="list row">
+        <section className="users-information">
+            <div className="list-user">
                 <table className="table-style">
                     <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Skill</th>
-                            <th>Skills</th>
-                            <th>Todo Count</th>
-                            <th>Done Project Count</th>
-                            <th>Working On</th>
-                            <th>Role</th>
-                            <th>Register At</th>
-                            <th>Last Login At</th>
-                            <th>Operations</th>
-                        </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Skill</th>
+                        <th>Skills</th>
+                        <th>Todo Count</th>
+                        <th>Done Project Count</th>
+                        <th>Working On</th>
+                        <th>Role</th>
+                        <th>Register At</th>
+                        <th>Last Login At</th>
+                        <th>Operations</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        {users.map((user ,index)=>{
-                            return(
-                                <ListUserItem key={index} index={index} data={user} OperationHandler={OperationHandler}/>
-                            );
-                        })}
+                    {users.map((user ,index)=>{
+                        return(
+                            <ListUserItem key={index} index={index} data={user} OperationHandler={OperationHandler}/>
+                        );
+                    })}
                     </tbody>
                 </table>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 export default ListUsers;
