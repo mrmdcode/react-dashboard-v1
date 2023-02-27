@@ -1,0 +1,52 @@
+.analyze-container .analyze-box{
+    min-width: 150px;
+    width: 24%;
+    height: 200px;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: #fff;
+    margin: 0 15px;
+}
+.analyze-container .analyze-box .header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+}
+.analyze-container .analyze-box .header-box .title {
+    font-size: 19px;
+}
+.analyze-container .analyze-box .header-box .operation {
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+}
+.analyze-container .analyze-box.chart-circle .content-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10px 30px 10px;
+    height: 135px;
+    position: relative;
+}
+.analyze-container .analyze-box.chart-bar .content-box {
+    display: flex;
+    flex-direction: column-reverse;
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    padding: 5px 10px 30px 10px;
+    height: 135px;
+    position: relative;
+}
+.analyze-container .analyze-box.chart-bar .content-box > *{
+    margin: 13px 0;
+    text-align: right;
+}
+.analyze-container .analyze-box .content-box .chart-detail{
+    font-size: 25px;
+    font-weight: 100;
+
+}
