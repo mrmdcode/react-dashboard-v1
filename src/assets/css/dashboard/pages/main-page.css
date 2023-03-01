@@ -13,33 +13,7 @@
     display: flex;
 
 }
-.dashboard-container .dashboard-content .main-container .chart-container {
-    width: 100%;
-    display: flex;
-    margin: 20px 0 0 0;
 
-}
-.dashboard-container .dashboard-content .main-container .chart-container .chart-box{
-    min-width: 150px;
-    width: 33%;
-    height: 380px;
-    border-radius: 15px;
-    padding: 7px;
-    background-color: #fff;
-    margin: 0 15px;
-}
-.dashboard-container .dashboard-content .main-container .user-suggestion-box {
-    width: 100%;
-    display: flex;
-    margin: 20px 0 0 0;
-}
-.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box{
-    min-width: 150px;
-    width: 24%;
-    height: 180px;
-    border-radius: 15px;
-    padding: 7px;
-    background-color: #fff;
-    margin: 0 15px;
+@import url("./../chart-container.css");
 
-}
+@import url("./../user-suggestion-container.css");
