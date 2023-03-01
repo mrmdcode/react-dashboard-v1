@@ -1,6 +1,6 @@
 import {createContext,useContext ,useState } from "react";
 const StateContext = createContext({
-    AppUrl:null,
+    appUrl:null,
     user : null,
     token : null,
     notification :null,
