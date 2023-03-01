@@ -1,8 +1,6 @@
 import React from 'react';
 import {BarAnalyzeBox, CircleAnalyzeBox} from "../../components/dashboard/AnalyzeBox";
-import {useStateContext} from "./../../context/ContextProvider"
 const MainPage = () => {
-    const {appUrl} = useStateContext();
 
 return(
     <div className="main-container">
@@ -18,15 +16,7 @@ return(
             <div className="chart-box"></div>
         </div>
         <div className="user-suggestion-box">
-            <div className="user-box">
-                <img src={appUrl+"/user/1.jpg"} alt="user 1" className="user-img"/>
-                <div className="user-detail">
-                    <p className="user-name">Mahdi Kazemi</p>
-                    <p className="user-email">dr.mahdikazemizade@gmail.com</p>
-                    <p className="user-skill c-1">Backend Developer</p>
-                </div>
-                <span className="user-busy"></span>
-            </div>
+
             <div className="user-box"></div>
             <div className="user-box"></div>
             <div className="user-box"></div>
