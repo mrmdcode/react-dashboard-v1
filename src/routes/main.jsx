@@ -5,6 +5,11 @@ import AuthalbeLayout from "../components/AuthalbeLayout";
 import NotFound from "../views/outher/NotFound";
 import MainPage from "../views/Dashboard/MainPage";
 import ListUsers from "../views/Dashboard/ListUsers";
+import NewUserAdmin from "../views/Dashboard/NewUserAdmin";
+import NewUserShopManager from "../views/Dashboard/NewUserShopManager";
+import NewUserWriter from "../views/Dashboard/NewUserWriter";
+import NewUserSeoDev from "../views/Dashboard/NewUserSeoDev";
+import NewUserNormal from "../views/Dashboard/NewUserNormal";
 export const mainRoutes = createBrowserRouter([
     {
         path: "/",
@@ -29,7 +34,28 @@ export const mainRoutes = createBrowserRouter([
             {
                 path: "/dashboard/users/list-users",
                 element: <ListUsers/>
-            }
+            },
+            {
+                path : "/dashboard/create-user/admin",
+                element : <NewUserAdmin/>,
+            },
+            {
+                path : "/dashboard/create-user/shop-manager",
+                element : <NewUserShopManager/>,
+            },
+            {
+                path : "/dashboard/create-user/writer",
+                element : <NewUserWriter/>,
+            },
+            {
+                path : "/dashboard/create-user/SEO-Dev",
+                element : <NewUserSeoDev/>,
+            },
+            {
+                path : "/dashboard/create-user/normal",
+                element : <NewUserNormal/>,
+            },
+
 
         ]
     },
