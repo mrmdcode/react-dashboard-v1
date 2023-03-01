@@ -6,10 +6,59 @@
 .dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box{
     min-width: 150px;
     width: 24%;
-    height: 180px;
+    height: 120px;
     border-radius: 15px;
-    padding: 7px;
+    padding: 7px 15px;
     background-color: #fff;
     margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 
 }
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 15px 0 0 ;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:  0 0 8px 0;
+
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(1){
+    color:#343A40;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif , Roboto;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(2){
+    margin: 0 0 15px 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Roboto Black";
+    color: #98A6AD;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3){
+    font-size: 12px;
+    font-weight: 700;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-1{
+    color: #F9C851;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-2{
+    color: #FF8ACC;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-3{
+    color : #10C469 ;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-4{
+    color: #35B8E0;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-5{}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-6{}
