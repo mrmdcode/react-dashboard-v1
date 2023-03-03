@@ -9,7 +9,31 @@
     width: 33%;
     height: 380px;
     border-radius: 15px;
-    padding: 7px;
+    padding: 25px;
     background-color: #fff;
     margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.dashboard-container .dashboard-content .main-container .chart-container .chart-box .title.left{
+    font-weight: 700;
+    font-size:30px;
+    rotate: -90deg;
+    position: absolute;
+    left: -65px;
+}
+.dashboard-container .dashboard-content .main-container .chart-container .chart-box .title.top{
+    font-weight: 700;
+    font-size:30px;
+    position: absolute;
+    top: 15px;
+}
+.dashboard-container .dashboard-content .main-container .chart-container .chart-box .title.right{
+    font-weight: 700;
+    font-size:30px;
+    rotate: 90deg;
+    position: absolute;
+    right: -65px;
 }

@@ -1,6 +1,10 @@
 import React from 'react';
 import {BarAnalyzeBox, CircleAnalyzeBox} from "../../components/dashboard/AnalyzeBox";
 import SuggestionUserBox from "../../components/dashboard/SuggestionUserBox";
+import PieChart from "../../components/Charts/dashboard/PieChart";
+import DoughnutChart from "../../components/Charts/dashboard/DoughnutChart";
+import AreaChart from "../../components/Charts/dashboard/AreaChart";
+import ChartBox from "../../components/dashboard/ChartBox";
 const MainPage = () => {
 
 return(
@@ -12,9 +16,15 @@ return(
             <BarAnalyzeBox name="Response Requests" value={100}>190</BarAnalyzeBox>
         </div>
         <div className="chart-container">
-            <div className="chart-box"></div>
-            <div className="chart-box"></div>
-            <div className="chart-box"></div>
+            <ChartBox title="Year Activity"  place="left">
+                <PieChart/>
+            </ChartBox>
+            <ChartBox title="User Statistics"  place="left">
+                <DoughnutChart/>
+            </ChartBox>
+            <ChartBox title="Login Daily"  place="top">
+                <AreaChart/>
+            </ChartBox>
         </div>
         <div className="user-suggestion-box">
             <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
