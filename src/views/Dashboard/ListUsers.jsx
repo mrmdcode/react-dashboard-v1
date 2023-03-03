@@ -1,5 +1,5 @@
 import React from 'react';
-import ListUserItem from "../../components/dashboard/ListUserItem";
+import ListUserItem from "../../components/ListUsers/ListUserItem";
 
 const ListUsers = () => {
     const users = [
