@@ -17,10 +17,10 @@ return(
             <div className="chart-box"></div>
         </div>
         <div className="user-suggestion-box">
-            <SuggestionUserBox/>
-            <SuggestionUserBox/>
-            <SuggestionUserBox/>
-            <SuggestionUserBox/>
+            <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
+            <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
+            <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
+            <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
         </div>
     </div>
 )

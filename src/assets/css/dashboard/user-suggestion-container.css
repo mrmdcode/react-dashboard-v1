@@ -66,10 +66,15 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: #f7ff00;
     top:18px;
     right: 18px;
 }
-.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.busy{}
-.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.jsut-finished{}
-.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.Unemployed{}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.busy{
+    background-color: lawngreen;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.jsut-finished{
+    background-color: #f7ff00;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.Unemployed{
+    background-color: firebrick;
+}
