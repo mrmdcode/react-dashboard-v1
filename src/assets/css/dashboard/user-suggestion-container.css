@@ -29,6 +29,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding:  0 0 8px 0;
+    margin: 0 45px 0 0;
 
 }
 .dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(1){
@@ -60,5 +61,15 @@
 .dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-4{
     color: #35B8E0;
 }
-.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-5{}
-.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-detail p:nth-child(3).c-6{}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #f7ff00;
+    top: 0;
+    right: 0;
+}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.busy{}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.jsut-finished{}
+.dashboard-container .dashboard-content .main-container .user-suggestion-box .user-box .user-busy.Unemployed{}
