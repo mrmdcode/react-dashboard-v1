@@ -1,5 +1,6 @@
 import React from 'react';
 import {BarAnalyzeBox, CircleAnalyzeBox} from "../../components/dashboard/AnalyzeBox";
+import SuggestionUserBox from "../../components/dashboard/SuggestionUserBox";
 const MainPage = () => {
 
 return(
@@ -16,10 +17,10 @@ return(
             <div className="chart-box"></div>
         </div>
         <div className="user-suggestion-box">
-
-            <div className="user-box"></div>
-            <div className="user-box"></div>
-            <div className="user-box"></div>
+            <SuggestionUserBox/>
+            <SuggestionUserBox/>
+            <SuggestionUserBox/>
+            <SuggestionUserBox/>
         </div>
     </div>
 )
