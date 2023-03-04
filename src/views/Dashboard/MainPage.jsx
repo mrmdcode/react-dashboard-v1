@@ -5,6 +5,7 @@ import PieChart from "../../components/Charts/dashboard/PieChart";
 import DoughnutChart from "../../components/Charts/dashboard/DoughnutChart";
 import AreaChart from "../../components/Charts/dashboard/AreaChart";
 import ChartBox from "../../components/dashboard/ChartBox";
+import LastActivity from "../../components/dashboard/LastActivity";
 const MainPage = () => {
 
 return(
@@ -31,6 +32,12 @@ return(
             <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
             <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
             <SuggestionUserBox FullName="Mahdi kazemi zade" Email="dr.mahdikazemizade84@gmail.com" Skill="Backend Developer" UserStatus="busy"/>
+        </div>
+        <div className="last-user-activity">
+            <div className="last-login">s</div>
+            <div className="last-activity">
+               <LastActivity/>
+            </div>
         </div>
     </div>
 )
