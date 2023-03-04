@@ -1,7 +1,6 @@
 .dashboard-container {
     display: block;
     font-family: sans-serif , Roboto;
-    height: 100vh;
 }
 
 @import url("./header-main.css");
