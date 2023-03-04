@@ -1,12 +1,14 @@
 import React from 'react';
 import {FiSettings} from 'react-icons/fi';
 import {MdLockOutline,MdLogout} from 'react-icons/md';
+import {useStateContext} from './../../context/ContextProvider'
 
 const AsideUserBox = () => {
+    const {appUrl} =useStateContext();
     return (
         <div className="user-box">
             <div className="user-img">
-                <img src="http://localhost:3000/user/1.jpg" alt="my pic"/>
+                <img src={appUrl+"/user/1.jpg"} alt="my pic"/>
             </div>
             <h2 className="user-fullname">mahdi kazemi zade</h2>
             <div className="user-position">Backend Developer</div>

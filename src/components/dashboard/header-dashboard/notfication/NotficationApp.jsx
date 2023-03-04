@@ -6,7 +6,92 @@ import {useStateContext} from "../../../../context/ContextProvider";
 
 const NotficationApp = () => {
     const {setDashboardHeaderNotficationAppShow , dashboardHeaderNotficationAppShow} = useStateContext();
-
+    const notfications =[
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+        {
+            ImageUrl :"/user/1.jpg",
+            ImageAlt : "username",
+            Name : "mahdi kazemi",
+            Message : "this is test message and spams text for mot text",
+            LM : false , // last message
+        },
+    ];
     return (
 
         <div className="notfication-app">
@@ -21,12 +106,7 @@ const NotficationApp = () => {
                                 </span>
                 </div>
                 <ul className="message-box">
-                    <Message imgsrc="http://localhost:3000/user/1.jpg" imgalt="username" name="mahdi kazemi" message="this is test message and spams text for mot text" lm={true}/>
-                    <Message imgsrc="http://localhost:3000/user/1.jpg" imgalt="username" name="mahdi kazemi" message="this is test message and spams text for mot text" lm={false}/>
-                    <Message imgsrc="http://localhost:3000/user/1.jpg" imgalt="username" name="mahdi kazemi" message="this is test message and spams text for mot text" lm={false}/>
-                    <Message imgsrc="http://localhost:3000/user/1.jpg" imgalt="username" name="mahdi kazemi" message="this is test message and spams text for mot text" lm={false}/>
-                    <Message imgsrc="http://localhost:3000/user/1.jpg" imgalt="username" name="mahdi kazemi" message="this is test message and spams text for mot text" lm={false}/>
-                    <Message imgsrc="http://localhost:3000/user/1.jpg" imgalt="username" name="mahdi kazemi" message="this is test message and spams text for mot text" lm={false}/>
+                    {notfications.map((message,index)=><Message key={index} data={message}/>)}
                 </ul>
                 <div className="notfication-footer">
                     View more Notfication <BsArrowRight/>

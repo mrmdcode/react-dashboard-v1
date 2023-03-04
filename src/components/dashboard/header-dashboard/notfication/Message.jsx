@@ -1,15 +1,17 @@
 import React from 'react';
+import {useStateContext} from "../../../../context/ContextProvider";
 
-const Message = ({imgsrc , imgalt , name , message , lm}) => {
-
+const Message = ({data}) => {
+    const {appUrl} = useStateContext();
+    const {ImageUrl , ImageAlt , Name , Message , LM} = data ;
     return (
-        <div className={lm? "message last-msg" : "message"}>
+        <div className={LM? "message last-msg" : "message"}>
             <div className="contact-img">
-                <img src={imgsrc} alt={imgalt}/>
+                <img src={appUrl+ImageUrl} alt={ImageAlt}/>
             </div>
             <div className="information-container">
-                <h4>{name}</h4>
-                <p>{message}</p>
+                <h4>{Name}</h4>
+                <p>{Message}</p>
             </div>
         </div>
     )

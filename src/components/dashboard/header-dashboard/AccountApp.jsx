@@ -5,11 +5,11 @@ import {IoIosArrowDown} from 'react-icons/io';
 import {useStateContext} from "../../../context/ContextProvider";
 
 const AccountApp = () => {
-    const {setDashboardHeaderAccountAppShow ,dashboardHeaderAccountAppShow} = useStateContext();
+    const {setDashboardHeaderAccountAppShow ,dashboardHeaderAccountAppShow,appUrl} = useStateContext();
     return (
         <div className="account-app">
             <div className="account-box" onClick={()=>setDashboardHeaderAccountAppShow(!dashboardHeaderAccountAppShow)}>
-                <img src="http://localhost:3000/user/1.jpg" alt="my img"/>
+                <img src={appUrl+"/user/1.jpg"} alt="my img"/>
                 mahdi kazemi
                 <IoIosArrowDown/>
             </div>

@@ -24,7 +24,7 @@ const StateContext = createContext({
 
 });
 export const ContextProvider = ({children}) =>{
-    const [appUrl, setAppUrl] = useState("http://localhost:3000");
+    const [appUrl, setAppUrl] = useState("http://dashboard-1.mrmdcode.com");
     const [user, _setcurrentUser] = useState({});
     const [token, _setToken] = useState('');
     const [notfication, _setNotfication] = useState('');
