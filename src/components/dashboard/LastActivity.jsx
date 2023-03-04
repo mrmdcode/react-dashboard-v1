@@ -1,5 +1,6 @@
 import React from 'react';
 import LastActivityUserItem from "./LastActivityUserItem";
+import {BiDotsVerticalRounded} from "react-icons/bi";
 
 const LastActivity = () => {
     const lastuserlogin = [
@@ -50,21 +51,32 @@ const LastActivity = () => {
         },
     ]
     return (
-        <table>
-            <thead>
-            <th>#</th>
-            <th>Project Name</th>
-            <th>Start Project</th>
-            <th>Time Working</th>
-            <th>Project Status</th>
-            <th>Last Commit</th>
-            <th>User Role</th>
-            <th>CreatedAt</th>
-            </thead>
-            <tbody>
-            {lastuserlogin.map((lastuserlogin,index)=><LastActivityUserItem key={index} index={index} data={lastuserlogin}/>)}
-            </tbody>
-        </table>
+        <div className="last-activity">
+            <div className="header">
+                <div className="title">Last Activity</div>
+                <div className="operation">
+                    <BiDotsVerticalRounded/>
+                </div>
+            </div>
+            <div className="body">
+                <table>
+                    <thead>
+                    <th>#</th>
+                    <th>Project Name</th>
+                    <th>Start Project</th>
+                    <th>Time Working</th>
+                    <th>Project Status</th>
+                    <th>Last Commit</th>
+                    <th>User Role</th>
+                    <th>CreatedAt</th>
+                    </thead>
+                    <tbody>
+                    {lastuserlogin.map((lastuserlogin,index)=><LastActivityUserItem key={index} index={index} data={lastuserlogin}/>)}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     )
 }
 export default LastActivity;
