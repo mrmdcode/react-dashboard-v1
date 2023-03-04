@@ -3,7 +3,7 @@ import LastActivityUserItem from "./LastActivityUserItem";
 import {BiDotsVerticalRounded} from "react-icons/bi";
 
 const LastActivity = () => {
-    const lastuserlogin = [
+    const lastuseractivity = [
         {
             ProjectName : "Oil_Back",
             ProjectStart : "2022/03/15",
@@ -71,7 +71,7 @@ const LastActivity = () => {
                     <th>CreatedAt</th>
                     </thead>
                     <tbody>
-                    {lastuserlogin.map((lastuserlogin,index)=><LastActivityUserItem key={index} index={index} data={lastuserlogin}/>)}
+                    {lastuseractivity.map((lastuseractivity,index)=><LastActivityUserItem key={index} index={index} data={lastuseractivity}/>)}
                     </tbody>
                 </table>
             </div>

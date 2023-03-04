@@ -18,9 +18,71 @@
 }
 .dashboard-container .dashboard-content .main-container .last-user-activity .last-login .header{
     width: 100%;
+    height: 35px;
     display: flex;
     justify-content: space-between;
     align-items: start;
+    padding: 15px 8px;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .header .title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 35px 0 0 0;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item
+{
+    width: 98%;
+    height: 50px;
+    display: inline;
+    border-bottom: 1px solid #dddddd;
+    margin: 10px 0;
+
+
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item .left
+{
+    float: left;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item .left img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item .content
+{
+    margin: 0 0 0 15px;
+    float: left;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item .content .user-name
+{
+    font-size: 15px;
+    font-weight: 600;
+    color: #343A40;
+    margin: 0 0 8px 0;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item .content .bio{
+    font-size: 13px;
+    font-weight: 400;
+    color: #98A6AD;
+    margin: 10px 0  0 0;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item .right
+{
+    float: right;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login .body .last-login-user-item .right .time-login
+{
+    color: #98A6AD;
+    font-size: 11px;
+    font-weight: 400;
+    margin:  0 0 10px 0;
 }
 .dashboard-container .dashboard-content .main-container .last-user-activity .last-activity
 {
