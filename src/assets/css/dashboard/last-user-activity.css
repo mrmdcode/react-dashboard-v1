@@ -11,11 +11,15 @@
     border-radius: 15px;
     padding: 7px 15px;
     background-color: #fff;
-    margin: 0 15px;
+    margin: 15px 15px 20px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;}
+    position: relative;
+}
+.dashboard-container .dashboard-content .main-container .last-user-activity .last-login table{
+
+}
 .dashboard-container .dashboard-content .main-container .last-user-activity .last-activity
 {
     min-width: 150px;
@@ -23,7 +27,7 @@
     border-radius: 15px;
     padding: 7px 15px;
     background-color: #fff;
-    margin: 15px 0 15px 20px ;
+    margin: 15px 0 20px 5px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
