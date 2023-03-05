@@ -1,4 +1,5 @@
 import {createContext,useContext ,useState } from "react";
+import doughnutChart from "../components/Charts/dashboard/DoughnutChart";
 const StateContext = createContext({
     appUrl:null,
     user : null,
@@ -19,6 +20,7 @@ const StateContext = createContext({
     setDashboardHeaderAccountAppShow: ()=>{},
     setdashboardAsideSubset: ()=>{},
     setDashboardAsideSubsetS: ()=>{},
+    setTitle: ()=>{},
 
 
 
@@ -98,7 +100,10 @@ export const ContextProvider = ({children}) =>{
     const setDashboardAsideSubsetS = () => {
         _setDashboardAsideSubsetS(!dashboardAsideSubsetS)
     }
-
+    const setTitle =(val) =>{
+        let title = document.querySelector('html head title');
+        title.textContent = val;
+    }
 
     return (
         <StateContext.Provider value={{
@@ -120,7 +125,8 @@ export const ContextProvider = ({children}) =>{
             setDashboardHeaderNotficationAppShow,
             setDashboardHeaderAccountAppShow,
             setDashboardAsideSubset,
-            setDashboardAsideSubsetS
+            setDashboardAsideSubsetS,
+            setTitle,
         }}>
             {children}
         </StateContext.Provider>
