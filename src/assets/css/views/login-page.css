@@ -1,0 +1,114 @@
+.login-page
+{
+    width:100%;
+    height: 100vh;
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+}
+.login-page .login-container
+{
+    width: 470px;
+    height: 500px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+
+}
+.login-page .login-container .content
+{
+    width: 80%;
+    height: 80%;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 70px;
+    left: 47px;
+}
+.login-page .login-container .header
+{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 600;
+    list-style: none;
+}
+.login-page .login-container .header li
+{
+    scale: 1.8;
+    cursor: pointer;
+}
+.login-page .login-container .content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 25px 0 0 0;
+}
+.login-page .login-container .content input[type="text"],
+.login-page .login-container .content input[type="password"]
+{
+    width: 80%;
+    height: 45px;
+    padding: 5px;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    background-color: transparent;
+    outline: none;
+    font-size: 19px;
+}
+.login-page .login-container .content input[type="password"]
+{
+    margin: 25px 0 ;
+}
+.login-page .login-container .content input[type="text"]:focus::placeholder,
+.login-page .login-container .content input[type="password"]:focus::placeholder
+{
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #575964;
+}
+.login-page .login-container .content > span
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.login-page .login-container .content >span > span
+{
+    display: flex;
+    flex-direction: column;
+}
+.login-page .login-container .content button
+{
+    width: 80%;
+    height: 50px;
+    margin: 25px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff02;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 3px );
+}
