@@ -10,6 +10,7 @@ import NewUserShopManager from "../views/Dashboard/NewUserShopManager";
 import NewUserWriter from "../views/Dashboard/NewUserWriter";
 import NewUserSeoDev from "../views/Dashboard/NewUserSeoDev";
 import NewUserNormal from "../views/Dashboard/NewUserNormal";
+import Login from "../views/outher/Login";
 export const mainRoutes = createBrowserRouter([
     {
         path: "/",
@@ -22,6 +23,10 @@ export const mainRoutes = createBrowserRouter([
     {
         path: "/t2",
         element: <Test2/>
+    },
+    {
+        path: "/Login",
+        element: <Login/>
     },
     {
         path: '/dashboard',
