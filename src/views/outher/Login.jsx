@@ -45,7 +45,7 @@ const Login = () => {
                 </ul>
                 <div className="content">
                     <input type="text" name="username" id="username" placeholder="username" onChange={HandlerInputLoginData} value={loginData.username}/>
-                    <input type="password" name="password" id="password" placeholder="password" onChange={HandlerInputLoginData} value={loginData.username}/>
+                    <input type="password" name="password" id="password" placeholder="password" onChange={HandlerInputLoginData} value={loginData.password}/>
                     <span>
                         <span>
                             <label htmlFor="RemmberMe">remmber me</label>
