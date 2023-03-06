@@ -1,5 +1,4 @@
 import {createContext,useContext ,useState } from "react";
-import doughnutChart from "../components/Charts/dashboard/DoughnutChart";
 const StateContext = createContext({
     appUrl:null,
     user : null,
@@ -27,8 +26,10 @@ const StateContext = createContext({
 });
 export const ContextProvider = ({children}) =>{
     const [appUrl, setAppUrl] = useState("http://dashboard-1.mrmdcode.com");
-    const [user, _setcurrentUser] = useState({});
-    const [token, _setToken] = useState('');
+    const [user, _setcurrentUser] = useState({
+        // name:"mahdi"
+    });
+    const [token, _setToken] = useState("");
     const [notfication, _setNotfication] = useState('');
     const [dashboardHeaderSearchAppShow, _setDashboardHeaderSearchAppShow] = useState(false);
     const [dashboardHeaderNotficationAppShow, _setDashboardHeaderNotficationAppShow] = useState(false);
@@ -54,8 +55,8 @@ export const ContextProvider = ({children}) =>{
     }
 
     const Logout = () => {
-        setToken();
-        setcurrentUser();
+        setToken(null);
+        setcurrentUser(null);
         setNotfication("Loggedout");
     }
 

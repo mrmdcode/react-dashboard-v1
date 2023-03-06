@@ -2,10 +2,17 @@ import React from 'react';
 import {MdLockOutline,MdLogout} from 'react-icons/md';
 import {VscAccount} from 'react-icons/vsc';
 import {IoIosArrowDown} from 'react-icons/io';
+import {useNavigate} from "react-router-dom";
 import {useStateContext} from "../../../context/ContextProvider";
 
 const AccountApp = () => {
+    const {Logout} =useStateContext()
+    const Navigate = useNavigate();
     const {setDashboardHeaderAccountAppShow ,dashboardHeaderAccountAppShow,appUrl} = useStateContext();
+    const HandlerLogOut =()=>{
+        Logout();
+        Navigate('/login');
+    }
     return (
         <div className="account-app">
             <div className="account-box" onClick={()=>setDashboardHeaderAccountAppShow(!dashboardHeaderAccountAppShow)}>
@@ -21,7 +28,7 @@ const AccountApp = () => {
                     <li className="item"><VscAccount/>My account</li>
                     <li className="item"><MdLockOutline/>Look Screen</li>
                     <li className="britem"></li>
-                    <li className="item"><MdLogout/>Logout</li>
+                    <li className="item" onClick={HandlerLogOut}><MdLogout/>Logout</li>
                 </ul>
             </div>
         </div>

@@ -2,9 +2,11 @@ import React,{useState} from 'react';
 import {useStateContext} from "../../context/ContextProvider";
 import Background from "./../../assets/img/Login-Page-Background.jpg"
 import {SlSocialFacebook, SlSocialGithub, SlSocialGoogle, SlSocialInstagram, SlSocialLinkedin} from "react-icons/sl";
+import {useNavigate} from "react-router-dom";
 
 const Login = () => {
-    const {setTitle} =useStateContext();
+    const Navigate =useNavigate();
+    const {setTitle ,setcurrentUser ,setToken } =useStateContext();
     const [loginData, setLoginData] = useState({
         username:"",
         password:"",
@@ -30,7 +32,11 @@ const Login = () => {
             RemmberMe:false,
             ExitAfterClose:false,
         });
-        
+        setcurrentUser({name:"mahdi",})
+        setToken("ddd")
+        Navigate('/');
+
+
     }
         setTitle("Login Page")
     return (

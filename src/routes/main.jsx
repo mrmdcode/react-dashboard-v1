@@ -1,4 +1,5 @@
-import {createBrowserRouter} from "react-router-dom";
+import React  from 'react';
+import {createBrowserRouter , Navigate} from "react-router-dom";
 import Test2 from "../views/test_2";
 import Test1 from "../views/test_1";
 import AuthalbeLayout from "../components/AuthalbeLayout";
@@ -11,11 +12,10 @@ import NewUserWriter from "../views/Dashboard/NewUserWriter";
 import NewUserSeoDev from "../views/Dashboard/NewUserSeoDev";
 import NewUserNormal from "../views/Dashboard/NewUserNormal";
 import Login from "../views/outher/Login";
+import UnAuthableLayout from "../components/unAuthableLayout";
+
+
 export const mainRoutes = createBrowserRouter([
-    {
-        path: "/",
-        element :<h2>hello</h2>
-    },
     {
         path: "/t1",
         element: <Test1/>
@@ -25,15 +25,15 @@ export const mainRoutes = createBrowserRouter([
         element: <Test2/>
     },
     {
-        path: "/Login",
-        element: <Login/>
-    },
-    {
-        path: '/dashboard',
+        path: '/',
         element : <AuthalbeLayout/>,
         children: [
             {
-                path: '/dashboard/',
+                path: '/',
+                element: <Navigate to="/dashboard" />
+            },
+            {
+                path : '/dashboard',
                 element: <MainPage/>,
             },
             {
@@ -60,8 +60,16 @@ export const mainRoutes = createBrowserRouter([
                 path : "/dashboard/create-user/normal",
                 element : <NewUserNormal/>,
             },
-
-
+        ]
+    },
+    {
+        path :'/',
+        element: <UnAuthableLayout />,
+        children: [
+            {
+                path: "/Login",
+                element: <Login/>
+            },
         ]
     },
     {

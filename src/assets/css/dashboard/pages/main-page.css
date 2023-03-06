@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    position: relative;
 }
 .dashboard-container .dashboard-content .main-container {
     width: 100%;
@@ -19,3 +20,5 @@
 @import url("./../user-suggestion-container.css");
 
 @import url("./../last-user-activity.css");
+
+
